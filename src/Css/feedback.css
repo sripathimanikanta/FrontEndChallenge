@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0em auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin: 0em auto;
+  }
+}
+section.feed_back .feedback_head {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+section.feed_back .carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.feed_back .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin: 2em 0em;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  width: 90%;
+  border-radius: 1em;
+}
+section.feed_back .person img {
+  height: 5em;
+  width: auto;
+  margin: 0.5em 0em;
+}
+section.feed_back .person .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5em 0em;
+}
+section.feed_back .person .feed {
+  color: #919191;
+  width: 80%;
+  margin: 1em 0em 2em 0em;
+}
+section.feed_back .hero_button_get_started {
+  display: block;
+  margin: 0em auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 5em;
+}
+
+@media only screen and (min-width: 900px) {
+  section.feed_back {
+    margin: 0 auto;
+    max-width: 1220px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 5em;
+  }
+  section.feed_back .carousel {
+    flex-direction: row;
+    overflow: scroll;
+  }
+  section.feed_back .person {
+    min-width: 600px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=feedback.css.map */

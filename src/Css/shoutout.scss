@@ -1,0 +1,43 @@
+@use 'style';
+
+section.shoutout {
+    background-color: style.$orange-color;
+    display: flex;
+    flex-direction: column;
+    padding: 7em 2em;
+    align-items: center;
+    .Mission_motto {
+      color: white;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .hero_button_get_started {
+      // display: inline;
+      a {
+        color: style.$orange-color;
+      }
+      background-color: white;
+      border-color: white;
+      // text-align: center;
+      width: max-content;
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (min-width: 900px){
+  section.shoutout {
+    padding: 4em 3.6em;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    .Mission_motto {
+      width: 60%;
+      // align-self: center ;
+      margin: 0;
+      text-align: left;
+    }
+  }
+}

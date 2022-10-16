@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0em auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin: 0em auto;
+  }
+}
+body .hero_button_get_started {
+  background-color: #f3613c;
+  border-radius: 2em;
+  padding: 1em 2em;
+  display: inline;
+}
+body .hero_button_get_started a {
+  text-decoration: none;
+  color: white;
+}
+body .hero_button_get_started:hover {
+  cursor: pointer;
+  background-color: #ffc0b0;
+}
+
+section.hero {
+  margin: 0 auto;
+}
+section.hero .flex-container-hero {
+  display: flex;
+  flex-direction: column;
+}
+section.hero .flex-container-hero img {
+  width: 80%;
+  align-self: center;
+}
+section.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #242e53;
+  padding: 1em;
+  align-items: center;
+}
+section.hero .hero-heading {
+  font-size: 3rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+section.hero .hero-description {
+  text-align: center;
+  width: 90%;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+section.hero .hero_button_get_started {
+  background-color: #f3613c;
+  border: solid 1em #f3613c;
+  border-radius: 2em;
+  padding: 0em 1em;
+}
+section.hero .hero_button_get_started a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 900px) {
+  section.hero {
+    max-width: 1220px;
+  }
+  section.hero .flex-container-hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section.hero .flex-container-hero img {
+    width: 40%;
+  }
+  section.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    color: #242e53;
+    padding: 4em;
+    align-items: flex-start;
+  }
+  section.hero .hero-heading {
+    text-align: left;
+  }
+  section.hero .hero-description {
+    text-align: left;
+    width: 80%;
+  }
+}/*# sourceMappingURL=hero.css.map */

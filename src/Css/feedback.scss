@@ -1,0 +1,70 @@
+@use 'style';
+
+section.feed_back {
+    .feedback_head {
+      font-size: 2.5rem;
+      line-height: 1.2em;
+      font-weight: 600;
+      text-align: center;
+    }
+  
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      // overflow: hidden;
+      align-items: center;
+    }
+  
+    .person {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      padding: 1em;
+      margin: 2em 0em;
+      box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: 0.5);
+      width: 90%;
+      border-radius: 1em;
+  
+      img {
+        height: 5em;
+        width: auto;
+        margin: 0.5em 0em;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 0.5em 0em;
+      }
+  
+      .feed {
+        color: style.$desc-color;
+        width: 80%;
+        margin: 1em 0em 2em 0em;
+      }
+    }
+  
+    .hero_button_get_started {
+      display: block;
+      margin: 0em auto;
+      width: max-content;
+      margin-bottom: 5em;
+    }
+  }
+
+  @media only screen and (min-width: 900px){
+    section.feed_back {
+      margin: 0 auto;
+      max-width: style.$max-wid;
+      height: fit-content;
+      margin-bottom: 5em;
+      .carousel {
+        flex-direction: row;
+        overflow: scroll;
+      }
+      .person {
+        min-width: 600px;
+        height: 300px;
+      }
+    }
+  }

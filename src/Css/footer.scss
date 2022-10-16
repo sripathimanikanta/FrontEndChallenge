@@ -1,0 +1,150 @@
+@use 'style';
+
+section.footer {
+    width: auto;
+    background-color: style.$black_color;
+    .flex-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #form_em {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        input[type="email"] {
+          width: fit-content;
+          padding: 1em 20vw 1em 2em;
+          border-radius: 2em;
+          border: 0px;
+          // font-size: 1.1rem;
+        }
+        input[type="button"] {
+          padding: 1em 2em;
+          border-radius: 2em;
+          color: white;
+          background-color: style.$orange-color;
+          // font-weight: 600;
+          // font-size: 1.1em;
+          border: 0px;
+  
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+  
+      ul {
+        padding: 2em 4em;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: white;
+  
+            @extend %org_change_bgc ;
+          }
+        }
+      }
+  
+      .two-nav {
+        display: flex;
+        line-height: 2rem;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+  
+      .logos-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+  
+        img {
+          height: 2.5em;
+          padding: 1.5em;
+  
+          @extend %org_change_bgc;
+          &:hover{
+            path{
+            fill: style.$orange-color;
+          }
+        }
+        }
+      }
+  
+      .logo {
+        padding: 2em;
+      }
+  
+      .copy_right {
+        color: style.$desc-color;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 900px){
+    section.footer {
+      .flex-cont {
+        display: grid;
+        grid-template-areas:
+          "logo   ull   ull   upd"
+          "icons  ull   ull   cop";
+          grid-template-columns: repeat(4, minmax(max-content, 1fr));
+          justify-content: space-around;
+          padding: 3em 1em;
+          // margin: 2em 0em;
+        #form_em {
+          grid-area: upd;
+          width: 100%;
+          input[type="email"] {
+            padding: .5em 1em .5em 1em;
+            font-size: 1rem;
+          }
+          input[type="button"] {
+            padding: .5em 1em .5em 1em;
+          }
+        }
+        .logo {
+          grid-area: logo;
+          padding: 0;
+          align-self: center;
+          justify-self: center;
+        }
+        .logos-flex-container {
+          grid-area: icons;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          gap: .8em;
+          img{
+            height: 1.5em;
+            width: 1.5em;
+            padding: 0;
+          }
+        }
+        .copy_right {
+          grid-area: cop;
+        }
+        .two-nav {
+          grid-area: ull;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(max-content, 1fr)) ;
+          grid-template-areas: 
+          "left-side right-side"
+          "left-side right-side";
+          .top-nav {
+            grid-area: left-side;
+          }
+          .other-nav {
+            grid-area: right-side;
+          }
+          ul{
+            padding: 0;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }

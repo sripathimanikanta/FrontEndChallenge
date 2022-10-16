@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+section.footer .flex-cont ul li a:hover, section.footer .flex-cont .logos-flex-container img:hover {
+  cursor: pointer;
+  color: #f3613c;
+}
+
+.wrapper {
+  margin: 0em auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin: 0em auto;
+  }
+}
+section.footer {
+  width: auto;
+  background-color: #1e1e26;
+}
+section.footer .flex-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.footer .flex-cont #form_em {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+section.footer .flex-cont #form_em input[type=email] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 20vw 1em 2em;
+  border-radius: 2em;
+  border: 0px;
+}
+section.footer .flex-cont #form_em input[type=button] {
+  padding: 1em 2em;
+  border-radius: 2em;
+  color: white;
+  background-color: #f3613c;
+  border: 0px;
+}
+section.footer .flex-cont #form_em input[type=button]:hover {
+  cursor: pointer;
+}
+section.footer .flex-cont ul {
+  padding: 2em 4em;
+}
+section.footer .flex-cont ul li {
+  list-style-type: none;
+}
+section.footer .flex-cont ul li a {
+  text-decoration: none;
+  color: white;
+}
+section.footer .flex-cont .two-nav {
+  display: flex;
+  line-height: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+section.footer .flex-cont .logos-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.footer .flex-cont .logos-flex-container img {
+  height: 2.5em;
+  padding: 1.5em;
+}
+section.footer .flex-cont .logos-flex-container img:hover path {
+  fill: #f3613c;
+}
+section.footer .flex-cont .logo {
+  padding: 2em;
+}
+section.footer .flex-cont .copy_right {
+  color: #919191;
+}
+
+@media only screen and (min-width: 900px) {
+  section.footer .flex-cont {
+    display: grid;
+    grid-template-areas: "logo   ull   ull   upd" "icons  ull   ull   cop";
+    grid-template-columns: repeat(4, minmax(-webkit-max-content, 1fr));
+    grid-template-columns: repeat(4, minmax(max-content, 1fr));
+    justify-content: space-around;
+    padding: 3em 1em;
+  }
+  section.footer .flex-cont #form_em {
+    grid-area: upd;
+    width: 100%;
+  }
+  section.footer .flex-cont #form_em input[type=email] {
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1rem;
+  }
+  section.footer .flex-cont #form_em input[type=button] {
+    padding: 0.5em 1em 0.5em 1em;
+  }
+  section.footer .flex-cont .logo {
+    grid-area: logo;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+  }
+  section.footer .flex-cont .logos-flex-container {
+    grid-area: icons;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+  }
+  section.footer .flex-cont .logos-flex-container img {
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0;
+  }
+  section.footer .flex-cont .copy_right {
+    grid-area: cop;
+  }
+  section.footer .flex-cont .two-nav {
+    grid-area: ull;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(-webkit-max-content, 1fr));
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    grid-template-areas: "left-side right-side" "left-side right-side";
+  }
+  section.footer .flex-cont .two-nav .top-nav {
+    grid-area: left-side;
+  }
+  section.footer .flex-cont .two-nav .other-nav {
+    grid-area: right-side;
+  }
+  section.footer .flex-cont .two-nav ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=footer.css.map */

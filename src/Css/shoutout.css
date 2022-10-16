@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0em auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin: 0em auto;
+  }
+}
+section.shoutout {
+  background-color: #f3613c;
+  display: flex;
+  flex-direction: column;
+  padding: 7em 2em;
+  align-items: center;
+}
+section.shoutout .Mission_motto {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1em;
+}
+section.shoutout .hero_button_get_started {
+  background-color: white;
+  border-color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 500;
+}
+section.shoutout .hero_button_get_started a {
+  color: #f3613c;
+}
+
+@media only screen and (min-width: 900px) {
+  section.shoutout {
+    padding: 4em 3.6em;
+    flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.shoutout .Mission_motto {
+    width: 60%;
+    margin: 0;
+    text-align: left;
+  }
+}/*# sourceMappingURL=shoutout.css.map */

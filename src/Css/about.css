@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0em auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin: 0em auto;
+  }
+}
+section.about {
+  margin: 3em 0em;
+}
+section.about .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+section.about .main_info_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #242e53;
+  padding: 1em;
+  align-items: center;
+}
+section.about .about-info-heading {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+section.about .about-info-desc {
+  text-align: center;
+  width: 90%;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+section.about .small_flex_cont {
+  display: flex;
+  flex-direction: column;
+}
+section.about .flexers {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 2em;
+  align-items: center;
+}
+section.about .flexers .number {
+  color: white;
+  background-color: #f3613c;
+  border: solid 0.2em #f3613c;
+  border-radius: 1em;
+  text-align: center;
+  margin-right: 1em;
+  width: 3em;
+  font-size: 1.3rem;
+}
+section.about .flexers .heading {
+  margin-left: 2em;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+section.about .flexers .desc {
+  grid-column: span 2;
+  padding: 1em 0em;
+  line-height: 1.8em;
+}
+
+@media only screen and (min-width: 900px) {
+  section.about {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  section.about .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  section.about .main_info_content {
+    align-items: flex-start;
+    padding: 4em;
+  }
+  section.about .about-info-heading,
+section.about .about-info-desc {
+    text-align: left;
+  }
+  section.about .about-info-desc {
+    width: 80%;
+  }
+  section.about .flexers .desc {
+    grid-column: 2/3;
+    width: 80%;
+    margin-left: 2.4em;
+  }
+}/*# sourceMappingURL=about.css.map */
