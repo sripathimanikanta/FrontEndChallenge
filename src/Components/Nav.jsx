@@ -1,24 +1,22 @@
 import React from "react";
 import { Outlet } from "react-router";
+import { NavLink } from "react-router-dom";
 import "../Css/nav.css";
 // import imgs from '../assets/logo.svg'
 
 const Nav = () => {
-  const menu = document.querySelector('.menu');
-  const close = document.querySelector(".close");
-  const nav = document.querySelector("nav");
+  const open = () =>{
+    document.querySelector('nav').classList.add("open-nav");
+    document.querySelector('.menu').style.transform = "scale(0)";
+    document.querySelector('.close').style.transform = "scale(1) rotate(180deg)";
+  }
 
-  menu.addEventListener("click", () => {
-    nav.classList.add("open-nav");
-    menu.style.transform = "scale(0)";
-    close.style.transform = "scale(1) rotate(180deg)";
-  });
-
-  close.addEventListener("click", () => {
-    nav.classList.remove("open-nav");
-    menu.style.transform = "scale(1)";
-    close.style.transform = "scale(0) rotate(0deg)";
-  });
+  const close = () =>{
+    document.querySelector('nav').classList.remove("open-nav");
+    document.querySelector('.menu').style.transform = "scale(1)";
+    document.querySelector('.close').style.transform = "scale(0) rotate(0deg)";
+  }
+  
   return (
     <>
       <header>
@@ -26,29 +24,29 @@ const Nav = () => {
           <img src="../assets/logo.svg" alt="" />
         </div>
 
-        <img className="menu" src="../assets/icon-hamburger.svg" alt="" />
-        <img className="close" src="../assets/icon-close.svg" alt="" />
+        <img className="menu" onClick={open} src="../assets/icon-hamburger.svg" alt="" />
+        <img className="close" onClick={close} src="../assets/icon-close.svg" alt="" />
         <nav>
           <ul>
             <li>
-              <a href="#">Pricing</a>
+              <NavLink to={"pricing"}>Pricing</NavLink>
             </li>
             <li>
-              <a href="#">Product</a>
+            <NavLink to={"products"}>Products</NavLink>
             </li>
             <li>
-              <a href="#">About Us</a>
+            <NavLink to={"about"}>About Us</NavLink>
             </li>
             <li>
-              <a href="#">Careers</a>
+            <NavLink to={"careers"}>Careers</NavLink>
             </li>
             <li>
-              <a href="#">Community</a>
+            <NavLink to={"community"}>Community</NavLink>
             </li>
           </ul>
         </nav>
         <div className="hero_button_get_started">
-          <a href="#">Get Started</a>
+        <NavLink to={"/"}>Get Started</NavLink>
         </div>
       </header>
       <Outlet />

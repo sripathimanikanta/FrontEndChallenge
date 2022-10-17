@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import '../Css/hero.css'
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
               while keeping the larger team goals in view.
             </div>
             <div className="hero_button_get_started">
-              <a href="#">Get Started</a>
+              <NavLink to={"/"}>Get Started</NavLink>
             </div>
           </div>
         </div>

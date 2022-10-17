@@ -8,7 +8,7 @@ import '../Css/style.css'
 const Home = () => {
   return (
     <>
-      <div class="wrapper">
+      <div className="wrapper">
         <Hero />
         <About />
         <FeedBack />

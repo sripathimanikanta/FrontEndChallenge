@@ -6,10 +6,6 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import About from './Components/About';
 import Products from './Components/Products';
-// import './Css/style.css';
-// import './Css/hero.css';
-
-
 
 function App() {
   return (
