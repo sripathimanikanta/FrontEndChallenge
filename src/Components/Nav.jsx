@@ -21,11 +21,11 @@ const Nav = () => {
     <>
       <header>
         <div className="logo">
-          <img src="../assets/logo.svg" alt="" />
+          <img src="assets/logo.svg" alt="" />
         </div>
 
-        <img className="menu" onClick={open} src="../assets/icon-hamburger.svg" alt="" />
-        <img className="close" onClick={close} src="../assets/icon-close.svg" alt="" />
+        <img className="menu" onClick={open} src="assets/icon-hamburger.svg" alt="" />
+        <img className="close" onClick={close} src="assets/icon-close.svg" alt="" />
         <nav>
           <ul>
             <li>
